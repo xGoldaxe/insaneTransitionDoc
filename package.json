@@ -1,15 +1,27 @@
 {
-  "name": "insaneTransition",
+  "name": "insanetransition",
   "version": "1.0.0",
   "description": "",
-  "main": "index.hml",
+  "main": "index.html",
+  "dependencies": {
+    "sass": "^1.30.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.0-beta.1"
+  },
   "scripts": {
+    "start": "parcel serve ./src/index.html",
+    "build": "parcel build ./src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xGoldaxe/insaneTransitionDoc.git"
+  },
+  "author": "pleveque",
   "license": "ISC",
-  "devDependencies": {
-    "sass": "^1.30.0"
-  }
+  "bugs": {
+    "url": "https://github.com/xGoldaxe/insaneTransitionDoc/issues"
+  },
+  "homepage": "https://github.com/xGoldaxe/insaneTransitionDoc#readme"
 }
