@@ -1,0 +1,120 @@
+p {
+    font-size: 50px;
+    text-align: center;
+}
+.mainSquare {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.mainSquare2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+
+    transform: scale(0.2);
+    opacity: 0;
+}
+.mainSquare3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+
+    transform: scaleX(0);
+}
+.mainSquare4 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+
+    transform: scaleX(0);
+}
+.mainSquare4--left {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 1;
+}
+.mainSquare4--right {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 1;
+}
+.bgSquare {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes mainSquareAnimation {
+    100% {
+        transform: scale(0.2);
+    }
+}
+@keyframes opacityDissapear {
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes opacityAppear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleXMax {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1, 0.2);
+        opacity: 1;
+    }
+}
+@keyframes scaleYMax {
+    0% {
+        opacity: 1;
+        transform: scale(1, 0.2);
+    }
+    100% {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+}
+@keyframes toLeftAppear {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes xMax {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes disapear-left {
+    100% {
+        transform: translateX(-100%);
+    }
+}
+@keyframes disapear-right {
+    100% {
+        transform: translateX(100%);
+    }
+}

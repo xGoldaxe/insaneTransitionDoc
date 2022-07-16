@@ -1,0 +1,55 @@
+.anim4--smallSquare {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+
+    top: 0; 
+    left: 0;
+    z-index: 2;
+}
+.anim4--smallSquare1 {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+
+    top: 0; 
+    right: 0;
+    z-index: 2;
+}
+.anim4--smallSquare2 {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+
+    bottom: 0; 
+    left: 0;
+    z-index: 2;
+}
+.anim4--smallSquare3 {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+
+    bottom: 0; 
+    right: 0;
+    z-index: 2;
+}
+
+
+
+@keyframes centerAppear {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes centerDisappear {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}

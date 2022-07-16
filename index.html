@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insane Transition js</title>
+    <link rel="stylesheet" href="./src/style.scss">
+</head>
+<body>
+    <div class="loadingScreen"><p>Loading ...</p></div>
+    <div class="loadingScreen--wrapper"></div>
+
+    <div class="app">
+        <div class="scrollPath"></div>
+        <div class="progressBar"></div>
+
+        <header>
+            <h1>
+                Insane Transition
+            </h1>
+            <img src="./src/image/arrow.svg" alt="arrow">
+            <div class="header__mask"></div>
+        </header>
+
+        <div class="allAnimation">
+            <div class="information">
+                Click on the icons to try animations
+                <img src="./src/image/cross.svg" alt="X"/>
+            </div>
+            <div class="--wrapper"></div>
+            <div class="animationGrid">
+                <div class="anim" id="anim1">
+                    <img src="./src/image/caree.svg" alt="anim1">
+                    <div class="anim__mask"></div>
+                </div>
+                <div class="anim" id="anim2">
+                    <img src="./src/image/anim2.svg" alt="anim2">
+                    <div class="anim__mask anim__mask--lighten"></div>
+                </div>
+                <div class="anim" id="anim3">                    
+                    <img src="./src/image/anim3.svg" alt="anim3">
+                    <div class="anim__mask"></div>
+                </div>
+                <div class="anim" id="anim4">
+                    <img src="./src/image/anim4.svg" alt="anim4">
+                    <div class="anim__mask anim__mask--lighten"></div>
+                </div>
+                
+                <!--<div class="anim" id="anim5">
+                    Animation 2
+                    <div class="anim__mask anim__mask--lighten"></div>
+                </div>
+                <div class="anim" id="anim6">
+                    Animation 2
+                    <div class="anim__mask"></div>
+                </div>
+                <div class="anim" id="anim7">
+                    Animation 2
+                    <div class="anim__mask anim__mask--lighten"></div>
+                </div>
+                <div class="anim" id="anim8">
+                    Animation 2
+                    <div class="anim__mask"></div>
+                </div>-->
+            </div>
+        </div>
+        <section>
+            <div class="section__mask"></div>
+            <div class="section__text">
+                <a href="https://www.npmjs.com/package/insanetransition">View it on npm</a>
+                <h2>Insane Transition</h2>
+
+                The simpliest way to use pre-build transition for your site!
+                
+                <h2> Installation</h2>
+                Using npm:
+                <div class="section__text__smallCode">npm i insanetransition --save</div>
+                
+                <h3> In your project: </h3>
+                
+                Link the css in your HTML document:
+                <div class="section__text__smallCode">
+                    &lt;link rel=&quot;stylesheet&quot; href=&quot;./node_modules/insanetransition/index.css&quot; /&gt;
+                </div>
+                
+                In your js:
+                <div class="section__text__smallCode">
+                var itrans = require('insanetransition');
+                </div>
+                
+                <h2> Use a transition</h2>
+    
+                <ul>
+                    <li>Select an animation (in this example its animation4)</li>
+                    <li>Then select an entry point for your transition and link it in the first argument</li>
+                    <li>The next 3 arguments are used for the colors of the elements of the animation</li>
+                    <li>5th argument is the speed of the animation</li>
+                    <li>6th argument is an anonymous function that will be use during the transition (ideal for changing the page content)</li>
+                    <li>The function return a promise, and resolve it when the transition is over</li>
+                </ul>
+    
+                <div class="section__text__bigCode">
+                    animation = itrans.animation4(document.getElementById("entry"), color1, color2, color3, 0.5, ()=>{ <span class="section__text__comment">//DO SOMETHING</span> } );
+                    <br><span class="section__text__comment">//when animation is over</span>
+                    <br>animation.then( () => {
+                        <br><span class="section__text__comment">    //DO SOMETHING</span>
+                    <br>})
+                </div>
+                
+                <h2>Where did I play the transition ?</h2>
+                The first argument represent the entry point of your transition, this is like a window where the transition will be played :
+                Use the class below for transition entry point
+                
+                <div class="section__text__smallCode">
+                    &lt;div id=&quot;exampleWrapper&quot; class=&quot;itrans--wrapper&quot;&gt;&lt;/div&gt;
+                </div>
+                
+                You must chose a width and height for your wrapper (or it wont show anything)
+            </div>
+        </section>
+        <footer>
+            <p>Made by Pierre Leveque, all rights reserved</p>
+            <div class="footer__logo">
+                <a target="_blank" href="https://discord.com/users/Goldaxe#4322">
+                    <img src="./src/image/discord.svg" alt="discord">
+                </a>
+                <a target="_blank" href="https://www.instagram.com/pierre123987/">
+                    <img src="./src/image/instagram.svg" alt="instagram">
+                </a>
+                <a target="_blank" href="https://github.com/xGoldaxe">
+                    <img src="./src/image/github.svg" alt="github">
+                </a>
+            </div>
+        </footer>
+    </div>
+
+<script src="./src/index.js"></script>
+</body>
+</html>

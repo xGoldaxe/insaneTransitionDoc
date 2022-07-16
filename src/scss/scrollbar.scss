@@ -1,0 +1,34 @@
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.scrollPath {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255,255,255,0.1);
+
+    z-index: 6;
+}
+
+.progressBar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(to bottom, gold, crimson);
+    opacity: 1;
+    z-index: 7;
+}
+
+@media screen and (max-width: 1040px) {
+    .scrollPath {
+        width: 5px;
+    }
+    .progressBar {
+        width: 5px;
+    }
+}
